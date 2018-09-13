@@ -1,0 +1,16 @@
+.board-container{
+  height: 90vh;
+}
+.row {
+  display: flex;
+  height: 33.33333%;
+}
+.row > .row-item {
+  background: hotpink;
+  margin: .01em;
+  padding: .01em;
+  border-radius: 3px;
+  flex: 1;
+}
+
+

@@ -1,0 +1,5 @@
+<div class="tile" (click)="setSelection()" [ngClass]="{'disabled': isOver()}">
+    <span class="tile-text" [ngClass]="{'victory-tile': model.isVictoryTile}" *ngIf="isValidText()">
+      {{model.selection}}
+    </span>
+</div>

@@ -1,0 +1,5 @@
+<div class="actions-container">
+  <button (click)="startGame()">Start</button>
+  <span *ngIf="!isOver()">{{getDefaultMessage()}}</span>
+  <span *ngIf="isOver()">{{getWinner()}}</span>
+</div>

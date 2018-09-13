@@ -1,0 +1,6 @@
+<div *ngIf="isRunning()" class="board-container">
+  <div class="row" *ngFor="let row of boardModel.board; let i = index">
+    <app-tile class="row-item" *ngFor="let tile of row ; let j = index" [position]="{i:i ,j:j}"></app-tile>
+  </div>
+</div>
+
