@@ -98,7 +98,7 @@ export class GameManager {
     }
 
     //check draw
-    if (this.moveCount == (Math.pow(this.boardSize, 2))) {
+    if (this.moveCount == (Math.pow(this.boardSize, 2))  && this.winner == TileSelection.nothing) {
       this.setWinner(TileSelection.nothing)
     }
   }
